@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Weronika Gruszka">
+        <title>Lodziarnia "IcePear"</title>
+        <link rel="stylesheet" href="styl.css">
+        <link rel="icon" href="icon.png" type="image/png">
+    </head>
+<body>
+    <header>
+        <h1>Lodziarnia "IcePear"</h1>
+        <img src="baner.jpg" alt="baner" id="baner"/>
+    </header>
+    <main>
+        <img src="cennik.png" id="cennik">
+        <section class="icecream">
+        <form>
+            <fieldset>
+                <legend>Wafelek/Kubeczek</legend>
+                <label for="typ">Wybierz wafelek lub kubeczek</label>
+                <select name="typ">
+                    <option value="wafelek">wafelek</option>
+                    <option value="kubek">kubeczek</option>
+                </select><br>
+                <label for="optional">Wybierz rodzaj wafelka</label>
+                <select name="optional">
+                    <option value="rozek">wybrałxm kubeczek</option>
+                    <option value="trad">tradycyjny</option>
+                    <option value="slodki">słodki</option>
+                    <option value="czarny">czarny</option>
+                    <option value="czarny">zielony</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Smak</legend>
+                <label for="smak">Wybierz smak: </label>
+                <select name="smak" required="">
+                    <option value="czekolada">czekoladowy</option>
+                    <option value="waniliowy">waniliowy</option>
+                    <option value="truskawka">truskawkowy</option>
+                    <option value="gruszka">gruszkowy</option>
+                </select><br>
+                <label for="gałki">Wybierz ilość gałek:</label>
+                <select name="gałki" required="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br>
+            </fieldset>
+            </form>
+        </section>
+        <section class="dodatki">
+            <form>
+            <fieldset>
+                <legend>Dodatki</legend>
+                <label for="polewa">Wybierz polewę:</label><br>
+                <input name="polewa" type="radio" value="bezpolewy">brak<br>
+                <input name="polewa" type="radio" value="czekolada">czekoladowa<br>
+                <input name="polewa" type="radio" value="karmel">karmelowa<br>
+                <input name="polewa" type="radio" value="truskawka">truskawkowa<br>
+                <br>
+                <label for="inne">Inne</label>
+                <select name="posypka">
+                    <option value="bez">-</option>
+                    <option value="smietana">bita śmietana</option>
+                    <option value="posypka">posypka</option>
+                    <option value="oba">śmietana+posypka</option>
+                </select>
+            </fieldset><br>
+            </form>
+        </section>
+        <section id="claim">
+            <form>
+            <input type="submit" value="Wyślij zamówienie">
+        </form>
+        </section>  
+    </main>
+    <footer>
+        ©Lodziarnia IcePear
+    </footer>
+</body>
+</html>
